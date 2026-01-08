@@ -29,74 +29,7 @@ This repository contains **5 interconnected Machine Learning models** that form 
 
 ## Directory Structure
 
-```mermaid
-graph TD
-    Root["Updated_MOdels/"]
-    
-    Bench["bench_predictor/"]
-    Completion["training_complition<br/>_success_predict/"]
-    ModuleAssist["training_module<br/>_assist/"]
-    DelayPred["training_module<br/>_delay_predictor/"]
-    Success["training_success<br/>_predictor/"]
-    
-    Root --> Bench
-    Root --> Completion
-    Root --> ModuleAssist
-    Root --> DelayPred
-    Root --> Success
-    Root --> RootReadme["README.md"]
-    
-    Bench --> B1["bench_copy.csv"]
-    Bench --> B2["bench_test_data.json"]
-    Bench --> B3["bench_predictor.ipynb"]
-    Bench --> B4["bench_pred_model.png"]
-    Bench --> B5["model_flow.md"]
-    Bench --> B6["README.md"]
-    
-    Completion --> C1["training_success.csv"]
-    Completion --> C2["test_predictions.json"]
-    Completion --> C3["model.ipynb"]
-    Completion --> C4["diagram.png"]
-    Completion --> C5["model_flow.md"]
-    Completion --> C6["README.md"]
-    
-    ModuleAssist --> M1["employee_training.csv"]
-    ModuleAssist --> M2["bench_copy.csv"]
-    ModuleAssist --> M3["demands.csv"]
-    ModuleAssist --> M4["test_employees.json"]
-    ModuleAssist --> M5["model.ipynb"]
-    ModuleAssist --> M6["diagram.png"]
-    ModuleAssist --> M7["model_flow.md"]
-    ModuleAssist --> M8["README.md"]
-    
-    DelayPred --> D1["train_data.csv"]
-    DelayPred --> D2["test_data.json"]
-    DelayPred --> D3["model.ipynb"]
-    DelayPred --> D4["diagram.png"]
-    DelayPred --> D5["model_flow.md"]
-    DelayPred --> D6["README.md"]
-    
-    Success --> S1["Employee_training.csv"]
-    Success --> S2["bench_test_data.json"]
-    Success --> S3["assessment_prediction_final.ipynb"]
-    Success --> S4["model_flow.md"]
-    Success --> S5["README.md"]
-    
-    classDef folder fill:#4A90E2,stroke:#2E5C8A,color:#fff,font-weight:bold
-    classDef csv fill:#FF6B6B,stroke:#CC5555,color:#fff
-    classDef json fill:#FFA500,stroke:#CC8400,color:#fff
-    classDef notebook fill:#4ECDC4,stroke:#3BA39C,color:#000,font-weight:bold
-    classDef markdown fill:#95E1D3,stroke:#76B8A3,color:#000
-    classDef image fill:#F38181,stroke:#C26666,color:#fff
-    
-    class Root,Bench,Completion,ModuleAssist,DelayPred,Success folder
-    class RootReadme,B6,C6,M8,D6,S5 markdown
-    class B1,C1,M1,M2,M3,D1,S1 csv
-    class B2,C2,M4,D2,S2 json
-    class B3,C3,M5,D3,S3 notebook
-    class B4,C4,M6,D4 image
-    class B5,C5,M7,D5,S4 markdown
-```
+!['Directory Structure'](./images/directory_structure.png)
 
 ---
 
@@ -306,5 +239,5 @@ Each model includes:
 
 *Last Updated: January 8, 2026*  
 *Version: 1.0*  
-*Status: Production Ready* ✓  
-*Organization: Infocepts Technologies Pvt. Ltd.*
+*Status: Production Ready*  
+*Author: Priti Ranjan Samal* 

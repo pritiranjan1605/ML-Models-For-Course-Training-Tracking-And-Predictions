@@ -683,6 +683,7 @@ The model significantly improves employee training assignment efficiency by alig
 
 ---
 
-**Last Updated**: January 5, 2026  
-**Model Version**: 2.0 (Demand-Aware)  
-**Status**: Production Ready
+**Last Updated**: January 2026  
+**Model Version**: 1.0  
+**Status**: Production Ready  
+**Author**: Priti Ranjan Samal

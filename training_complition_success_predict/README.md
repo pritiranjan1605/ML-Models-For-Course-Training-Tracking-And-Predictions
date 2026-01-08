@@ -180,6 +180,7 @@ Load employees from JSON file and iterate through `predict_completion_percentage
 ---
 
 **Last Updated**: January 2026  
-**Model Version**: 2.0  
+**Model Version**: 1.0  
+**Status**: Production Ready  
 **Author**: Priti Ranjan Samal
 

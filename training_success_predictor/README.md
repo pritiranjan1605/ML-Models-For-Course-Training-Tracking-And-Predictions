@@ -429,4 +429,5 @@ For questions or issues regarding this model:
 **Last Updated**: January 2026  
 **Model Version**: 1.0  
 **Status**: Production Ready  
-**Author**: Training Analytics Team
+**Author**: Priti Ranjan Samal
+
