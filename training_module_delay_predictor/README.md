@@ -106,63 +106,7 @@ The model predicts:
 - `Predicted_End_Date`: Calculated end date based on prediction
 
 ## Model Workflow Diagram
-
-```mermaid
-graph TD
-    subgraph "Cell 1: Data Loading and Preprocessing"
-        A[Load train_data.csv] --> B[Analyze Delay Patterns by Course_Category]
-        B --> C[Analyze Delay Patterns by Module_Name]
-        C --> D[Create Pattern Dictionaries: category_delay_mean, module_delay_mean, global_delay_mean]
-        D --> E[Convert Date Columns to Datetime]
-        E --> F[Calculate Planned_Duration]
-        F --> G[Extract Date Features: month, day, dayofweek, quarter]
-        G --> H[Calculate Start_Delay]
-        H --> I[Create Weekend Flags: Planned_Weekend, Actual_Weekend]
-        I --> J[Create Batch_Category using pd.cut]
-        J --> K[Label Encode: Course_Category, Batch_Category]
-        K --> L[Target Encoding: Category_Delay_Mean, Module_Delay_Mean]
-        L --> M[Select 17 Feature Columns]
-        M --> N[Split Data: train_test_split 80/20]
-        N --> O[Train GradientBoostingRegressor]
-        O --> P[Train RandomForestRegressor]
-        P --> Q[Create VotingRegressor Ensemble]
-        Q --> R[Evaluate Model: MAE, RMSE, R2]
-    end
-
-    subgraph "Cell 2: Print Accuracy Scores"
-        S[Print MAE, RMSE, R2 Score]
-    end
-
-    subgraph "Cell 3: Test Data Analysis"
-        T[Load test_data_500.json] --> U[Analyze Course_Category Distribution]
-        U --> V[Analyze Delay_Days Distribution]
-    end
-
-    subgraph "Cell 4: Define Prediction Function"
-        W[Define predict_delay Function]
-    end
-
-    subgraph "Cell 5: Make Predictions"
-        X[Load test_data_1000.json] --> Y[Apply predict_delay Function]
-        Y --> Z[Calculate Predicted_End_Date]
-        Z --> AA[Calculate Error_Margin]
-        AA --> AB[Classify Match Status: Exact, Close, Moderate, Not Close]
-        AB --> AC[Print Detailed Results for First 10 Samples]
-    end
-
-    subgraph "Cell 6: Accuracy Summary"
-        AD[Count Match Status Categories] --> AE[Calculate Overall Accuracy]
-        AE --> AF[Print Error Statistics: MAE, Max Over/Under Prediction]
-        AF --> AG[Print Match Status Distribution]
-    end
-
-    R --> S
-    S --> T
-    V --> W
-    W --> X
-    AC --> AD
-```
-
+![Training Module Delay Prediction System Workflow](diagram.png)
 ## Key Insights
 
 - **Cloud** courses typically have a 4-day delay pattern
@@ -171,8 +115,11 @@ graph TD
 
 ## License
 
-Internal use only - Infocepts Technologies Pvt. Ltd.
+Internal use only.
 
-## Author
+---
 
-Training Analytics Team
+**Last Updated**: January 2026  
+**Model Version**: 1.0  
+**Status**: Production Ready  
+**Author**: Priti Ranjan Samal
