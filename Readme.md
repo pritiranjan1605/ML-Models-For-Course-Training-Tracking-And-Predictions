@@ -237,6 +237,21 @@ Each model includes:
 
 ---
 
+## License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+### What This Means
+
+- **Free to use**: You can use this software freely
+- **Free to modify**: You can change and improve the code
+- **Free to distribute**: You can share it with others
+- **No warranty**: The software is provided "as is" without any guarantees
+
+For more details, see the [LICENSE](LICENSE) file in the root directory.
+
+---
+
 *Last Updated: January 8, 2026*  
 *Version: 1.0*  
 *Status: Production Ready*  
