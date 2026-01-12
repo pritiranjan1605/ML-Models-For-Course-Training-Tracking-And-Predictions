@@ -22,6 +22,7 @@ This is particularly powerful for:
 
 ##  Advanced Architecture
 !['Project Architecture for NLP Transformer remark analysis'](./diagram.png)
+
 **Key Improvements Over Standard ML**:
 1. **Advanced Preprocessing**: Lemmatization extracts word roots (running → run, better → good)
 2. **Higher Dimensionality**: 5000 features vs 500 in standard TF-IDF
